@@ -29,7 +29,7 @@
    <img src="./images/websitePrivado.jpg" alt="archivos" style="padding-left:40px; padding-bottom:30px">
 
 6. **Script de automatización:**  
-   - Creamos un archivo `script` que ejecuta automáticamente los comandos para habilitar los sitios, activar el módulo SSL y reiniciar el servicio de Apache.
+   - Creamos un archivo `script` que ejecuta automáticamente los comandos para habilitar los sitios, activar el módulo SSL y reiniciar el servicio de Nginx.
 
   <img src="./images/script.jpg" alt="archivos" style="padding-left:40px; padding-bottom:30px">
 
