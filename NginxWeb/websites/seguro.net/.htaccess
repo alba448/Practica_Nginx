@@ -1,0 +1,5 @@
+AuthType Basic
+AuthName "Acceso Restringido a Usuarios"
+AuthUserFile /etc/nginx/.htpasswd
+Require valid-user
+Options -Indexes
