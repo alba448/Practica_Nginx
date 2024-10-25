@@ -78,7 +78,7 @@ docker-compose down
 Para acceder a la terminal del servidor generado usamos el comando:
 
 ```bash
-docker exec -it apache_server /bin/bash
+docker exec -it nginx_server /bin/bash
 ```
 
 (También sirve `bash`)
@@ -88,19 +88,13 @@ docker exec -it apache_server /bin/bash
 
 A continuacion tendremos que generar el archivo `.htpasswd` con su usuario y contraseña.
 
-Después de acceder a la terminal de Apache, dirigimos nuestra atención a la ruta `/etc/apache2`.
+Después de acceder a la terminal de Nginx, dirigimos nuestra atención a la ruta `/etc/apache2`.
 
-Ejecutando el comando `ls -a`, podremos visualizar los archivos ocultos y confirmar la existencia del archivo `.htpasswd`. Si no está presente, procederemos a crearlo; si ya existe, lo reemplazaremos.
-
-Para crear o modificar el archivo, utilizaremos el siguiente comando:
+Abriremos OpenSSL y ejecutaremos el siquiente comando:
 
 ```bash
-htpasswd -c /etc/apache2/.htpasswd usuario
+openssl passwd
 ```
-
-En `usuario`, ingresaremos el nombre de usuario que deseamos utilizar, y se nos solicitará que introduzcamos la contraseña cuando sea necesario.
-
-![foto](./images/htpasswd.jpg)
 
 El archivo se ubicará automáticamente en la ruta de nuestro proyecto gracias a la creación del volumen en el archivo `docker-compose.yml`.
 
