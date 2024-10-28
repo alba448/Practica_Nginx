@@ -40,7 +40,7 @@
    <img src="./images/carpetaCerts.jpg" alt="archivos" style="padding-left:40px; padding-bottom:30px">
 
 9. **Archivo `docker-compose.yml`:**  
-   - Creamos el archivo `docker-compose.yml` con la configuración necesaria para el contenedor de Apache.
+   - Creamos el archivo `docker-compose.yml` con la configuración necesaria para el contenedor de Nginx.
 
    <img src="./images/docker-compose.jpg" alt="archivos" style="padding-left:40px; padding-bottom:30px">
 
@@ -96,6 +96,8 @@ Abriremos OpenSSL y ejecutaremos el siquiente comando:
 openssl passwd
 ```
 Aquí tendremos que confirmar nuestra contraseña para la página de seguro.net
+
+ <img src="./images/htpasswd.jpg" alt="archivos" style="padding-left:40px; padding-bottom:30px">
 
 El archivo se ubicará automáticamente en la ruta de nuestro proyecto gracias a la creación del volumen en el archivo `docker-compose.yml`.
 
