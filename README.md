@@ -88,13 +88,14 @@ docker exec -it nginx_server /bin/bash
 
 A continuacion tendremos que generar el archivo `.htpasswd` con su usuario y contraseña.
 
-Después de acceder a la terminal de Nginx, dirigimos nuestra atención a la ruta `/etc/apache2`.
+Después de acceder a la terminal de Nginx, dirigimos nuestra atención a la ruta `/etc/nginx`.
 
 Abriremos OpenSSL y ejecutaremos el siquiente comando:
 
 ```bash
 openssl passwd
 ```
+Aquí tendremos que confirmar nuestra contraseña para la página de seguro.net
 
 El archivo se ubicará automáticamente en la ruta de nuestro proyecto gracias a la creación del volumen en el archivo `docker-compose.yml`.
 
